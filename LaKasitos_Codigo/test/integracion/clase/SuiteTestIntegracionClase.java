@@ -1,0 +1,27 @@
+package integracion.clase;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+import integracion.clase.altaClase.TestIntegracionAltaClase;
+import integracion.clase.asignarClaseAAula.TestIntegracionAsignarClaseAAula;
+import integracion.clase.asignarClaseAEntrenador.TestIntegracionAsignarClaseAEntrenador;
+import integracion.clase.bajaClase.TestIntegracionBajaClase;
+import integracion.clase.clasesAlDiaPorEntrenador.TestIntegracionClasesAlDiaEntrenador;
+import integracion.clase.listarClases.TestIntegracionListarClases;
+import integracion.clase.listarClasesNoDisponibles.TestIntegracionListarClasesNoDisponibles;
+import integracion.clase.modificarClase.TestIntegracionModificarClase;
+import integracion.clase.mostrarClasesPorAula.TestIntegracionMostrarClasesPorAula;
+import integracion.clase.mostrarClasesPorEntrenador.TestIntegracionMostrarClasesPorEntrenador;
+import integracion.clase.mostrarDatosClase.TestIntegracionMostrarDatosClase;
+import integracion.clase.reactivarClase.TestIntegracionReactivarClase;
+
+@RunWith(Suite.class)
+@SuiteClasses( { TestIntegracionAltaClase.class, TestIntegracionBajaClase.class, 
+	TestIntegracionAsignarClaseAAula.class, TestIntegracionAsignarClaseAEntrenador.class, 
+	TestIntegracionClasesAlDiaEntrenador.class, TestIntegracionListarClases.class, 
+	TestIntegracionListarClasesNoDisponibles.class, TestIntegracionModificarClase.class,
+	TestIntegracionMostrarClasesPorAula.class, TestIntegracionMostrarClasesPorEntrenador.class,
+	TestIntegracionMostrarDatosClase.class, TestIntegracionReactivarClase.class })
+public class SuiteTestIntegracionClase {}
